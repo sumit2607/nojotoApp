@@ -14,10 +14,13 @@
         android:theme="@style/Theme.NojotoApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.Splash"
+            android:name=".ui.LoginSignupScreen"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
