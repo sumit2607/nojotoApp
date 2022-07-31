@@ -1,6 +1,7 @@
 package com.example.nojotoapp.ui
 
 import android.app.ActionBar
+import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
@@ -26,7 +27,11 @@ class LoginSignupScreen : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-
+        btnFb.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
 
