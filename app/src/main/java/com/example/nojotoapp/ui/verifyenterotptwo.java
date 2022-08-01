@@ -36,7 +36,9 @@ public class verifyenterotptwo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verifyenterotptwo);
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         final Button verifybuttonclick = findViewById(R.id.buttongetotp);
 
         inputnumber1 = findViewById(R.id.inputotp1);

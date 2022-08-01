@@ -45,7 +45,63 @@ class LoginSignupScreen : AppCompatActivity() {
             finish()
         }
 
-       getLogin()
+        getLogin()
+
+        login_with_truecaller.setOnClickListener {
+
+        }
+
+    }
+
+
+
+    private fun signInGoogle() {
+        val signInIntent: Intent = mGoogleSignInClient.signInIntent
+        startActivityForResult(signInIntent, Req_Code)
+    }
+
+
+
+    // onActivityResult() function : this is where
+    // we provide the task and data for the Google Account
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+       // finish()
+        if (requestCode == Req_Code) {
+            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+           // handleResult(task)
+        }
+    }
+
+
+    // this is where we update the UI after Google signin takes place
+    private fun UpdateUI(account: GoogleSignInAccount) {
+        val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+        firebaseAuth.signInWithCredential(credential).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+//                SavedPreference.setEmail(this, account.email.toString())
+//                SavedPreference.setUsername(this, account.displayName.toString())
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (GoogleSignIn.getLastSignedInAccount(this) != null) {
+            startActivity(
+                Intent(
+                    this, MainActivity
+                    ::class.java
+                )
+            )
+            finish()
+        }
+
     }
 
     private fun getLogin() {
@@ -106,6 +162,7 @@ class LoginSignupScreen : AppCompatActivity() {
                 Toast.makeText(this, "Enter Mobile number", Toast.LENGTH_SHORT)
                     .show()
             }
+        }
 
 
             FirebaseApp.initializeApp(this)
@@ -123,55 +180,6 @@ class LoginSignupScreen : AppCompatActivity() {
                 signInGoogle()
             }
         }
-    }
-
-    private fun signInGoogle() {
-        val signInIntent: Intent = mGoogleSignInClient.signInIntent
-        startActivityForResult(signInIntent, Req_Code)
-    }
-
-    // onActivityResult() function : this is where
-    // we provide the task and data for the Google Account
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-       // finish()
-        if (requestCode == Req_Code) {
-            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
-           // handleResult(task)
-        }
-    }
-
-
-    // this is where we update the UI after Google signin takes place
-    private fun UpdateUI(account: GoogleSignInAccount) {
-        val credential = GoogleAuthProvider.getCredential(account.idToken, null)
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-//                SavedPreference.setEmail(this, account.email.toString())
-//                SavedPreference.setUsername(this, account.displayName.toString())
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-        }
-    }
-
-    override fun onStart() {
-        super.onStart()
-        if (GoogleSignIn.getLastSignedInAccount(this) != null) {
-            startActivity(
-                Intent(
-                    this, MainActivity
-                    ::class.java
-                )
-            )
-            finish()
-        }
-
-    }
-
 
     private fun setAdapter() {
 
@@ -192,5 +200,10 @@ class LoginSignupScreen : AppCompatActivity() {
          * interval of 3 seconds.
          */
         viewPager.autoScroll(3000)
+    }
+
+    override fun onResume() {
+        super.onResume()
+
     }
 }

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/first_fragment"
         android:name="com.example.nojotoapp.ui.HomeFargment"
-        android:label="Dashboard"
+        android:label="Home"
         tools:layout="@layout/fragment_home_fargment" >
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/second_fragment"
         android:name="com.example.nojotoapp.ui.CameraFragment"
-        android:label="Leaderboard"
+        android:label="Camera"
         tools:layout="@layout/fragment_live_show" >
         <action
             android:id="@+id/action_second_fragment_to_third_fragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/third_fragment"
         android:name="com.example.nojotoapp.ui.NotificationFragment"
-        android:label="Store"
+        android:label="Notification"
         tools:layout="@layout/fragment_notification" >
         <action
             android:id="@+id/action_thirdFragment_to_fourthFragment"

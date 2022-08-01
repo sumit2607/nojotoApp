@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:overScrollMode="never"
     android:scrollbars="none"
-    android:background="#21FFC107">
+    android:background="@drawable/language_bg">
 
     // top one section
 
@@ -207,7 +207,7 @@
             android:layout_height="wrap_content">
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttongetotp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
