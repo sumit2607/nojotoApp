@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.nojotoapp">
+    package="com.example.nojotoapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <!--    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
-
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
     <uses-feature android:name="android.hardware.camera.any" />
 
     <application
@@ -20,7 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NojotoApp"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".ui.AfterSplash"
+            android:exported="false" />
         <activity
             android:name=".ui.LoginSignupScreen"
             android:exported="false" />
@@ -29,7 +30,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.Splash"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -34,11 +34,9 @@ class LoginSignupScreen : AppCompatActivity() {
 
         this.adapter = ViewPagerAdapter(
             listOf(
-                R.drawable.ic_one,
-                R.drawable.ic_two,
-                R.drawable.ic_three,
-                R.drawable.ic_four,
-                R.drawable.ic_five
+                R.drawable.one,
+                R.drawable.two,
+                R.drawable.three
             )
         )
     }

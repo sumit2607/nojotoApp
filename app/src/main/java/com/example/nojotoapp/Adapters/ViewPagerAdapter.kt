@@ -8,10 +8,6 @@ import androidx.viewpager.widget.PagerAdapter
 import com.example.nojotoapp.R
 import kotlinx.android.synthetic.main.item_images_list.view.*
 
-/**
- * The [ViewPagerAdapter] class is used as adapter of "images"
- * view pager.
- */
 
 class ViewPagerAdapter(private val images: List<Int>) : PagerAdapter() {
 
