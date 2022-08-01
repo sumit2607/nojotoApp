@@ -155,6 +155,7 @@
 
                 <TextView
                     android:id="@+id/tag1"
+                    android:text="#travel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
@@ -177,6 +178,7 @@
 
                 <TextView
                     android:id="@+id/tag2"
+                    android:text="#tranding"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
@@ -199,6 +201,7 @@
 
             <TextView
                 android:id="@+id/song"
+                android:text="song by rihana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"

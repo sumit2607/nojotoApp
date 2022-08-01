@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/second_fragment"
-        android:name="com.example.nojotoapp.ui.LiveShowFragment"
+        android:name="com.example.nojotoapp.ui.CameraFragment"
         android:label="Leaderboard"
         tools:layout="@layout/fragment_live_show" >
         <action
