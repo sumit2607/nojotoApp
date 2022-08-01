@@ -16,11 +16,6 @@ class LoginSignupScreen : AppCompatActivity() {
     private lateinit var adapter: ViewPagerAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        );
         setContentView(R.layout.activity_login_signup_screen)
         setAdapter()
         setViewPager()

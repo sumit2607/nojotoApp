@@ -6,21 +6,23 @@
         android:title="@string/menu_dashboard"
         android:enabled="true"
         android:contentDescription="@string/menu_dashboard"
-        android:icon="@drawable/ic_dashboard_white_24dp"/>
+        android:icon="@drawable/ic_home_white_24dp"/>
 
     <item
         android:enabled="true"
         android:id="@+id/second_fragment"
         android:title="@string/menu_leaderboard"
         android:contentDescription="@string/menu_leaderboard"
-        android:icon="@drawable/ic_multiline_chart_white_24dp"/>
+        android:icon="@drawable/ic_baseline_camera_24"/>
+
+
 
     <item
         android:enabled="true"
         android:id="@+id/third_fragment"
         android:title="@string/menu_store"
         android:contentDescription="@string/menu_store"
-        android:icon="@drawable/ic_store_white_24dp"/>
+        android:icon="@drawable/ic_baseline_notifications_active_24"/>
 
 
     <item

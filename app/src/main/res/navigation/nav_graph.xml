@@ -20,7 +20,7 @@
         android:label="Leaderboard"
         tools:layout="@layout/fragment_live_show" >
         <action
-            android:id="@+id/action_secondFragment_to_thirdFragment"
+            android:id="@+id/action_second_fragment_to_third_fragment"
             app:destination="@id/third_fragment" />
     </fragment>
     <fragment
