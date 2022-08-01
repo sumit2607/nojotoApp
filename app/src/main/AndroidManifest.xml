@@ -23,6 +23,9 @@
             android:name=".ui.AfterSplash"
             android:exported="false" />
         <activity
+            android:name=".ui.verifyenterotptwo"
+            android:exported="false" />
+        <activity
             android:name=".ui.LoginSignupScreen"
             android:exported="false" />
         <activity

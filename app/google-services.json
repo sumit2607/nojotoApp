@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "137782122171",
+    "project_id": "nojotoapp-7a88d",
+    "storage_bucket": "nojotoapp-7a88d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137782122171:android:91527259dd5fb9efb07b9e",
+        "android_client_info": {
+          "package_name": "com.example.nojotoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137782122171-sunq3q3hsv1eq6kggovu8j3o4fmp2h4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABsrESfaUF6w_z5uFMipJHYsoSZQu6SeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137782122171-sunq3q3hsv1eq6kggovu8j3o4fmp2h4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

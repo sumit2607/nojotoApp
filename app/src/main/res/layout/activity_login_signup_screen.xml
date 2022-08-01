@@ -50,56 +50,72 @@
 
 
         <EditText
-            android:phoneNumber="true"
             android:id="@+id/ed1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/india"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="50dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/gradient_border"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:phoneNumber="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/cont"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/ed1"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_navigate_next_24" />
 
 
-        <RelativeLayout
-            android:id="@+id/rl1"
+        <LinearLayout
+            android:layout_below="@+id/cont"
+           android:layout_margin="@dimen/dp_40"
+            android:id="@+id/socialicons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ed1"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:orientation="horizontal">
+            android:gravity="center">
 
-            <androidx.appcompat.widget.AppCompatButton
 
-                android:id="@+id/btnFb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/Signin"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_margin="20dp"
-                android:layout_toRightOf="@id/btnFb" />
+                android:src="@drawable/google" />
 
-        </RelativeLayout>
+            <ImageView
+                android:id="@+id/btnFb"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/fb" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/twitter" />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rl1"
+            android:layout_below="@+id/socialicons"
             android:layout_marginStart="70dp"
             android:letterSpacing="0.1"
             android:text="or already have a account" />
 
         <TextView
             android:letterSpacing="0.1"
-            android:layout_below="@+id/rl1"
+            android:layout_below="@+id/socialicons"
             android:layout_toRightOf="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,14 +123,6 @@
             android:textColor="#FF0000"
             android:text=" login here"
             />
-
-        <TextView
-            android:layout_margin="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/login"
-            android:layout_centerHorizontal="true"
-            android:text="by logging in you agree to our t  and c"/>
 
 
 

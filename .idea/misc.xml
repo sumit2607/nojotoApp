@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable-v24/ic_dashboard_white_24dp.xml" value="0.191" />
+        <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable/backgroundbox.xml" value="0.1" />
+        <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable/backgroundbutton.xml" value="0.2185" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable/circle_bg.xml" value="0.2185" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable/circle_bg_dark.xml" value="0.2185" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/drawable/gradient_border.xml" value="0.2265" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/activity_login_signup_screen.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/activity_verifyenterotptwo.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/fragment_camera.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/fragment_home_fargment.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/finee/AndroidStudioProjects/nojotoAppNew/app/src/main/res/layout/fragment_notification.xml" value="0.22826086956521738" />
